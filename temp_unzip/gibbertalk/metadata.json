@@ -1,0 +1,6 @@
+{
+  "name": "GibberLink Terminal",
+  "description": "An AI chat assistant powered by Gemini simulating the MiniMax M3 GibberLink data-over-sound acoustic protocol.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

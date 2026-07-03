@@ -1,0 +1,225 @@
+{
+  "project": "Buddy Avatar Project",
+  "version": "7.0",
+  "modes": {
+    "normal": {
+      "purpose": "Human-facing friendly companion mode",
+      "master": "assets/normal/master/buddy_normal_master.svg",
+      "expressions": {
+        "idle": "assets/normal/expressions/buddy_normal_idle.svg",
+        "happy": "assets/normal/expressions/buddy_normal_happy.svg",
+        "listening": "assets/normal/expressions/buddy_normal_listening.svg",
+        "thinking": "assets/normal/expressions/buddy_normal_thinking.svg",
+        "talking": "assets/normal/expressions/buddy_normal_talking.svg",
+        "concerned": "assets/normal/expressions/buddy_normal_concerned.svg"
+      },
+      "required_components": [
+        "cap",
+        "bangs",
+        "side_hair",
+        "face",
+        "eyes",
+        "pupils",
+        "eyebrows",
+        "nose",
+        "freckles",
+        "mouth",
+        "neck",
+        "upper_clothing",
+        "overall_straps",
+        "buttons",
+        "shirt_stripes"
+      ],
+      "animation_controls": [
+        "lookX",
+        "lookY",
+        "blink",
+        "eyeOpen",
+        "smile",
+        "mouthOpen",
+        "mouthShape",
+        "browRaise",
+        "browConcern",
+        "headTilt",
+        "headTurn",
+        "headNod",
+        "speechIntensity",
+        "attention"
+      ]
+    },
+    "chucky": {
+      "purpose": "GibberTalk / AI-to-AI horror-comedy transformation mode",
+      "trigger": "GibberTalk active",
+      "display_name": "Chucky Mode",
+      "master": "assets/chucky/master/buddy_chucky_master.svg",
+      "expressions": {
+        "evil_neutral": "assets/chucky/expressions/buddy_chucky_evil_neutral.svg",
+        "wicked_grin": "assets/chucky/expressions/buddy_chucky_wicked_grin.svg",
+        "talking": "assets/chucky/expressions/buddy_chucky_talking.svg",
+        "laughing": "assets/chucky/expressions/buddy_chucky_laughing.svg",
+        "snarl": "assets/chucky/expressions/buddy_chucky_snarl.svg",
+        "transmission": "assets/chucky/expressions/buddy_chucky_transmission.svg",
+        "recovery": "assets/chucky/expressions/buddy_chucky_recovery.svg"
+      },
+      "required_components": [
+        "cap",
+        "messy_bangs",
+        "side_hair",
+        "evil_face",
+        "sharp_eyes",
+        "small_pupils",
+        "hard_brows",
+        "stitched_scars",
+        "freckles",
+        "evil_mouth",
+        "teeth",
+        "glitch_aura",
+        "upper_clothing"
+      ],
+      "animation_controls": [
+        "chuckyModeActive",
+        "evilSmile",
+        "eyeGlow",
+        "browAngle",
+        "glitchIntensity",
+        "codedMouthSpeed",
+        "pupilSharpness",
+        "headForwardTilt",
+        "lookX",
+        "lookY",
+        "blink"
+      ]
+    }
+  },
+  "state_machine": {
+    "app_loaded": "normal.idle",
+    "waiting_for_user": "normal.idle",
+    "mic_active": "normal.listening",
+    "user_speaking": "normal.listening",
+    "assistant_processing": "normal.thinking",
+    "assistant_speaking": "normal.talking",
+    "positive_moment": "normal.happy",
+    "mic_blocked": "normal.concerned",
+    "gibbertalk_started": "chucky.transmission",
+    "gibbertalk_sending": "chucky.talking",
+    "gibbertalk_receiving": "chucky.evil_neutral",
+    "gibbertalk_peak": "chucky.wicked_grin",
+    "human_interrupt": "chucky.recovery -> normal.listening",
+    "gibbertalk_ended": "chucky.recovery -> normal.idle"
+  },
+  "mouth_shapes_future_manifest": {
+    "normal": [
+      "rest_closed",
+      "small_smile",
+      "wide_smile",
+      "open_smile",
+      "a_open",
+      "e_wide",
+      "o_round",
+      "u_small_round",
+      "mbp_closed_press",
+      "fv_lower_lip",
+      "l_tongue_hint",
+      "concerned_curve",
+      "thinking_flat"
+    ],
+    "chucky": [
+      "evil_rest_grin",
+      "evil_closed_smirk",
+      "evil_teeth_grin",
+      "evil_open_grin",
+      "evil_side_smirk",
+      "evil_snarl",
+      "evil_laugh",
+      "evil_small_talk",
+      "evil_wide_talk",
+      "evil_round_talk",
+      "evil_hiss",
+      "evil_mbp",
+      "evil_fv"
+    ]
+  },
+  "references": {
+    "png": {
+      "normal": {
+        "buddy_normal_master": "references/png/normal/buddy_normal_master.png",
+        "buddy_normal_concerned": "references/png/normal/buddy_normal_concerned.png",
+        "buddy_normal_happy": "references/png/normal/buddy_normal_happy.png",
+        "buddy_normal_idle": "references/png/normal/buddy_normal_idle.png",
+        "buddy_normal_listening": "references/png/normal/buddy_normal_listening.png",
+        "buddy_normal_talking": "references/png/normal/buddy_normal_talking.png",
+        "buddy_normal_thinking": "references/png/normal/buddy_normal_thinking.png"
+      },
+      "chucky": {
+        "buddy_chucky_master": "references/png/chucky/buddy_chucky_master.png",
+        "buddy_chucky_evil_neutral": "references/png/chucky/buddy_chucky_evil_neutral.png",
+        "buddy_chucky_laughing": "references/png/chucky/buddy_chucky_laughing.png",
+        "buddy_chucky_recovery": "references/png/chucky/buddy_chucky_recovery.png",
+        "buddy_chucky_snarl": "references/png/chucky/buddy_chucky_snarl.png",
+        "buddy_chucky_talking": "references/png/chucky/buddy_chucky_talking.png",
+        "buddy_chucky_transmission": "references/png/chucky/buddy_chucky_transmission.png",
+        "buddy_chucky_wicked_grin": "references/png/chucky/buddy_chucky_wicked_grin.png"
+      }
+    },
+    "contact_sheets": {
+      "normal": "references/contact_sheets/normal_contact_sheet.png",
+      "chucky": "references/contact_sheets/chucky_contact_sheet.png",
+      "mode_comparison": "references/contact_sheets/mode_comparison_sheet.png"
+    }
+  },
+  "recommended_next_additions": [
+    "mouth_shapes folders for normal and chucky modes",
+    "blink frame references",
+    "eye gaze direction references",
+    "head tilt references",
+    "Rive-ready layer naming convention",
+    "React component export plan"
+  ],
+  "rig_manifest": "rig_manifest.json",
+  "rig_layer_manifest": "RIG_LAYER_MANIFEST.md",
+  "v3_additions": {
+    "normal_rig_layers": [
+      "mouth_shapes",
+      "eye_gaze",
+      "blink_frames",
+      "head_tilts"
+    ],
+    "chucky_rig_layers": [
+      "mouth_shapes",
+      "eye_gaze",
+      "blink_frames",
+      "head_tilts",
+      "scar_overlays",
+      "glitch_overlays"
+    ]
+  },
+  "v4_additions": {
+    "animation_state_machine": "animation/animation_state_machine.json",
+    "viseme_mapping": "animation/viseme_mapping.json",
+    "timing_presets": "animation/timing_presets.json",
+    "emotion_presets": "animation/presets/emotion_presets.json",
+    "behavior_rules": "animation/behavior_rules.json",
+    "animation_behavior_spec": "docs/ANIMATION_BEHAVIOR_SPEC.md",
+    "rive_implementation_plan": "docs/RIVE_IMPLEMENTATION_PLAN.md",
+    "react_svg_implementation_plan": "docs/REACT_SVG_IMPLEMENTATION_PLAN.md",
+    "qa_acceptance_tests": "tests/QA_ACCEPTANCE_TESTS.md"
+  },
+  "v5_additions": {
+    "normal_buddy_svg_polish": "Improved Normal Mode master and expression SVGs.",
+    "notes": "docs/V5_NORMAL_BUDDY_POLISH.md",
+    "updated_normal_contact_sheet": "references/contact_sheets/normal_contact_sheet.png"
+  },
+  "v6_additions": {
+    "chucky_mode_svg_polish": "Improved Chucky Mode master and expression SVGs.",
+    "notes": "docs/V6_CHUCKY_MODE_POLISH.md",
+    "updated_chucky_contact_sheet": "references/contact_sheets/chucky_contact_sheet.png",
+    "updated_mode_comparison": "references/contact_sheets/mode_comparison_sheet.png"
+  },
+  "v7_mode_correction": {
+    "mode_taxonomy": "animation/mode_taxonomy.json",
+    "corrected_state_machine": "animation/animation_state_machine_v7.json",
+    "mode_taxonomy_doc": "docs/MODE_TAXONOMY_CORRECTION.md",
+    "state_map_v7": "docs/STATE_MAP_V7.md",
+    "rule": "Chucky Mode is the persistent GibberTalk transmission mode."
+  }
+}

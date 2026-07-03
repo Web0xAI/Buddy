@@ -1,0 +1,84 @@
+{
+  "version": "7.0",
+  "core_rules": [
+    "Normal Mode is always used for human-facing interaction unless GibberTalk is active.",
+    "Chucky Mode is only used during GibberTalk / AI-to-AI audio communication.",
+    "Human interruption always overrides Chucky Mode and returns Buddy to Normal Mode.",
+    "Do not hard-cut expressions; blend whenever possible.",
+    "Buddy must preserve core identity anchors in every state."
+  ],
+  "normal_mode_rules": {
+    "idle": [
+      "breathe subtly",
+      "blink naturally",
+      "small gaze drift"
+    ],
+    "listening": [
+      "maintain eye contact",
+      "slight head tilt",
+      "slow blink",
+      "small nod after long user speech"
+    ],
+    "thinking": [
+      "look up or side",
+      "one brow may raise",
+      "mouth becomes small/flat"
+    ],
+    "talking": [
+      "use visemes",
+      "reduce blink frequency",
+      "close mouth at phrase end"
+    ],
+    "concerned": [
+      "soft down gaze",
+      "small worried mouth",
+      "do not panic"
+    ]
+  },
+  "chucky_mode_rules": {
+    "entry": [
+      "freeze normal face",
+      "eyes snap",
+      "grin grows",
+      "stitches/glitch activate"
+    ],
+    "active": [
+      "reduced blinking",
+      "sharp eye darts",
+      "coded mouth ticks",
+      "hold grin between bursts"
+    ],
+    "peak": [
+      "use wicked grin",
+      "higher glitch intensity",
+      "eyes lock forward"
+    ],
+    "exit": [
+      "hold grin briefly",
+      "double blink",
+      "glitch fades",
+      "return friendly"
+    ]
+  },
+  "avoid": [
+    "constant bouncing",
+    "dead center stare",
+    "overly realistic gore",
+    "normal mouth flapping in Chucky Mode",
+    "Chucky Mode during normal human conversation"
+  ],
+  "mode_taxonomy_correction": {
+    "chucky_mode_means": "persistent GibberTalk transmission mode",
+    "transmission_is_not": "a standalone expression-only state",
+    "transmission_is": "the operating condition for Chucky Mode",
+    "required_always_on_markers_during_chucky_mode": [
+      "subtle glitch aura",
+      "sharper eyes",
+      "darker face",
+      "visible scars/stitches",
+      "crooked grin baseline",
+      "rare uncanny blink",
+      "low signal pulse"
+    ]
+  }
+}

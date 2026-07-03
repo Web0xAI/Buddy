@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Chucky mouth evil_rest_grin">
+  <defs>
+    <linearGradient id="eyeBlue" cx="36%" cy="30%" r="68%">
+      <stop offset="0%" stop-color="#91E3FF"/>
+      <stop offset="44%" stop-color="#0B8CF0"/>
+      <stop offset="100%" stop-color="#063E9D"/>
+    </linearGradient>
+    <radialGradient id="evilEye" cx="42%" cy="34%" r="76%">
+      <stop offset="0%" stop-color="#D7FBFF"/>
+      <stop offset="36%" stop-color="#1EAFFF"/>
+      <stop offset="78%" stop-color="#0753C7"/>
+      <stop offset="100%" stop-color="#041A60"/>
+    </radialGradient>
+    <filter id="evilGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#FF2C2C" flood-opacity="0.62"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#1E9CFF" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+<rect width="320" height="240" fill="none"/><g id="evil_rest_grin"><path d="M70 118 C126 166 215 148 270 78" fill="none" stroke="#4A160D" stroke-width="12" stroke-linecap="round"/><path d="M100 109 C142 130 207 122 252 84 C226 122 161 146 106 124 Z" fill="#F4EEE5"/></g>
+</svg>

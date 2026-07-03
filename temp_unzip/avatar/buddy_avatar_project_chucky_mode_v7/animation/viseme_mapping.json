@@ -1,0 +1,82 @@
+{
+  "version": "4.0",
+  "description": "Mouth shape mappings for Normal Mode and Chucky Mode.",
+  "normal": {
+    "default_strategy": "text_heuristic_plus_audio_amplitude",
+    "mouth_shapes_folder": "assets/normal/rig_layers/mouth_shapes",
+    "phoneme_to_shape": {
+      "AA": "a_open",
+      "AE": "a_open",
+      "AH": "a_open",
+      "AY": "a_open",
+      "EH": "e_wide",
+      "EE": "e_wide",
+      "IY": "e_wide",
+      "IH": "e_wide",
+      "OH": "o_round",
+      "OW": "o_round",
+      "AO": "o_round",
+      "OO": "u_small_round",
+      "UW": "u_small_round",
+      "M": "mbp_closed_press",
+      "B": "mbp_closed_press",
+      "P": "mbp_closed_press",
+      "F": "fv_lower_lip",
+      "V": "fv_lower_lip",
+      "L": "small_smile",
+      "R": "o_round",
+      "S": "e_wide",
+      "Z": "e_wide",
+      "silence": "rest_closed"
+    },
+    "amplitude_fallback": {
+      "0.00-0.12": "rest_closed",
+      "0.12-0.35": "small_smile",
+      "0.35-0.65": "open_smile",
+      "0.65-1.00": "a_open"
+    },
+    "phrase_end_shape": "small_smile",
+    "transition_ms": 120
+  },
+  "chucky": {
+    "default_strategy": "coded_burst_mouth_ticks",
+    "mouth_shapes_folder": "assets/chucky/rig_layers/mouth_shapes",
+    "phoneme_to_shape": {
+      "AA": "evil_wide_talk",
+      "AE": "evil_wide_talk",
+      "AH": "evil_wide_talk",
+      "EH": "evil_hiss",
+      "EE": "evil_hiss",
+      "IY": "evil_hiss",
+      "OH": "evil_round_talk",
+      "OW": "evil_round_talk",
+      "AO": "evil_round_talk",
+      "OO": "evil_round_talk",
+      "UW": "evil_round_talk",
+      "M": "evil_mbp",
+      "B": "evil_mbp",
+      "P": "evil_mbp",
+      "F": "evil_fv",
+      "V": "evil_fv",
+      "S": "evil_hiss",
+      "Z": "evil_hiss",
+      "silence": "evil_rest_grin"
+    },
+    "gibbertalk_burst_cycle": [
+      "evil_rest_grin",
+      "evil_small_talk",
+      "evil_hiss",
+      "evil_teeth_grin",
+      "evil_round_talk",
+      "evil_side_smirk"
+    ],
+    "amplitude_fallback": {
+      "0.00-0.12": "evil_rest_grin",
+      "0.12-0.35": "evil_small_talk",
+      "0.35-0.65": "evil_wide_talk",
+      "0.65-1.00": "evil_open_grin"
+    },
+    "phrase_end_shape": "evil_teeth_grin",
+    "transition_ms": 70
+  }
+}

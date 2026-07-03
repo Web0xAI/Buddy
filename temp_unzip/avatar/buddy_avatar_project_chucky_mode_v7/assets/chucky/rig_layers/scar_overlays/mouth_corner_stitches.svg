@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220" role="img" aria-label="Chucky scar overlay mouth_corner_stitches">
+  <defs>
+    <linearGradient id="eyeBlue" cx="36%" cy="30%" r="68%">
+      <stop offset="0%" stop-color="#91E3FF"/>
+      <stop offset="44%" stop-color="#0B8CF0"/>
+      <stop offset="100%" stop-color="#063E9D"/>
+    </linearGradient>
+    <radialGradient id="evilEye" cx="42%" cy="34%" r="76%">
+      <stop offset="0%" stop-color="#D7FBFF"/>
+      <stop offset="36%" stop-color="#1EAFFF"/>
+      <stop offset="78%" stop-color="#0753C7"/>
+      <stop offset="100%" stop-color="#041A60"/>
+    </radialGradient>
+    <filter id="evilGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#FF2C2C" flood-opacity="0.62"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#1E9CFF" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+<rect width="360" height="220" fill="none"/><g id="mouth_corner_stitches"><g fill="none" stroke="#5F2418" stroke-width="7" stroke-linecap="round"><path d="M85 120 C125 96 160 92 205 104"/><path d="M210 142 C250 160 286 158 318 142"/></g><g stroke="#2B0E08" stroke-width="4" stroke-linecap="round"><path d="M112 108 L100 92"/><path d="M150 98 L148 80"/><path d="M240 153 L250 136"/><path d="M280 151 L287 134"/></g></g>
+</svg>

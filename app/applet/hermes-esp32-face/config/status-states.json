@@ -1,0 +1,36 @@
+{
+  "states": {
+    "IDLE": {
+      "face": "idle",
+      "text": "Hermes Ready"
+    },
+    "LISTENING": {
+      "face": "listening",
+      "text": "Listening"
+    },
+    "THINKING": {
+      "face": "neutral_thinking",
+      "text": "Thinking"
+    },
+    "SPEAKING": {
+      "face": "speaking_mouth",
+      "text": "Speaking"
+    },
+    "WORKER_BUSY": {
+      "face": "focused_busy",
+      "text": "Worker Busy"
+    },
+    "ERROR": {
+      "face": "alert_error",
+      "text": "Check Logs"
+    },
+    "EMERGENCY_STOP": {
+      "face": "warning",
+      "text": "Stopped"
+    },
+    "OFFLINE": {
+      "face": "sleeping_offline",
+      "text": "Offline"
+    }
+  }
+}

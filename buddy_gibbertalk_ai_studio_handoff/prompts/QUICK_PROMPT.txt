@@ -1,0 +1,24 @@
+Use this package as the complete handoff for the Buddy app.
+
+Use buddy_project_latest.zip as the main app.
+Use gibbertalk_project.zip as the hidden GibberTalk acoustic protocol donor.
+Use buddy_avatar_project_chucky_mode_v7.zip and buddy_reference_pngs_v7.zip as the visual/mode reference.
+
+Do not start by cleaning up the UI.
+Preserve the working Buddy voice conversation.
+Add runtime modes:
+normal_mode = human-facing Buddy
+chucky_mode = GibberTalk transmission Buddy
+
+Chucky Mode means GibberTalk transmission is active. It is not just one expression.
+
+Extract GibberTalk into src/lib/gibbertalk and wire events:
+gibbertalk_started -> chucky_mode.entry_transform
+gibbertalk_channel_open -> chucky_mode.transmission_idle
+gibbertalk_sending -> chucky_mode.transmitting_send
+gibbertalk_receiving -> chucky_mode.transmitting_receive
+gibbertalk_audio_burst -> chucky_mode.coded_talking
+gibbertalk_ended -> chucky_mode.recovery -> normal_mode.idle
+human_interrupt -> chucky_mode.recovery -> normal_mode.listening
+
+Use the full instructions in prompts/AI_STUDIO_MASTER_PROMPT.md.

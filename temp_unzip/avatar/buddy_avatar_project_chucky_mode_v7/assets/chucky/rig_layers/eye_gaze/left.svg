@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="220" viewBox="0 0 360 220" role="img" aria-label="Chucky eye gaze left">
+  <defs>
+    <linearGradient id="eyeBlue" cx="36%" cy="30%" r="68%">
+      <stop offset="0%" stop-color="#91E3FF"/>
+      <stop offset="44%" stop-color="#0B8CF0"/>
+      <stop offset="100%" stop-color="#063E9D"/>
+    </linearGradient>
+    <radialGradient id="evilEye" cx="42%" cy="34%" r="76%">
+      <stop offset="0%" stop-color="#D7FBFF"/>
+      <stop offset="36%" stop-color="#1EAFFF"/>
+      <stop offset="78%" stop-color="#0753C7"/>
+      <stop offset="100%" stop-color="#041A60"/>
+    </radialGradient>
+    <filter id="evilGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#FF2C2C" flood-opacity="0.62"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#1E9CFF" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+<rect width="360" height="220" fill="none"/><g id="chucky_eyes_left">
+        <g filter="url(#evilGlow)">
+          <path d="M60 112 C88 62 153 60 190 112 C156 141 96 141 60 112 Z" fill="#FFFFFF"/>
+          <path d="M300 112 C272 62 207 60 170 112 C204 141 264 141 300 112 Z" fill="#FFFFFF"/>
+          <circle cx="116" cy="106" r="33" fill="url(#evilEye)"/>
+          <circle cx="220" cy="106" r="33" fill="url(#evilEye)"/>
+          <circle cx="125" cy="108" r="16" fill="#041247"/>
+          <circle cx="211" cy="108" r="16" fill="#041247"/>
+          <circle cx="99" cy="82" r="8" fill="#FFFFFF"/>
+          <circle cx="237" cy="82" r="8" fill="#FFFFFF"/>
+          <path d="M61 112 C100 137 150 137 189 112" fill="none" stroke="#FF3737" stroke-width="5" opacity="0.82"/>
+          <path d="M299 112 C260 137 210 137 171 112" fill="none" stroke="#FF3737" stroke-width="5" opacity="0.82"/>
+        </g>
+        </g>
+</svg>

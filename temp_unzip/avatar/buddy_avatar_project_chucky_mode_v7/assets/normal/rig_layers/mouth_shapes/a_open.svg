@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220" role="img" aria-label="Normal mouth a_open">
+  <defs>
+    <linearGradient id="eyeBlue" cx="36%" cy="30%" r="68%">
+      <stop offset="0%" stop-color="#91E3FF"/>
+      <stop offset="44%" stop-color="#0B8CF0"/>
+      <stop offset="100%" stop-color="#063E9D"/>
+    </linearGradient>
+    <radialGradient id="evilEye" cx="42%" cy="34%" r="76%">
+      <stop offset="0%" stop-color="#D7FBFF"/>
+      <stop offset="36%" stop-color="#1EAFFF"/>
+      <stop offset="78%" stop-color="#0753C7"/>
+      <stop offset="100%" stop-color="#041A60"/>
+    </radialGradient>
+    <filter id="evilGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#FF2C2C" flood-opacity="0.62"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#1E9CFF" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+<rect width="320" height="220" fill="none"/><g id="a_open"><ellipse cx="160" cy="113" rx="60" ry="64" fill="#A53D27"/><path d="M112 81 C137 105 183 105 208 81 Q192 66 160 66 Q128 66 112 81 Z" fill="#FFFFFF"/><ellipse cx="160" cy="145" rx="34" ry="14" fill="#E36C77" opacity="0.78"/></g>
+</svg>

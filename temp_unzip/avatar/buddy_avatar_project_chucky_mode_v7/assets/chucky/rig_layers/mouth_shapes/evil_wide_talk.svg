@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Chucky mouth evil_wide_talk">
+  <defs>
+    <linearGradient id="eyeBlue" cx="36%" cy="30%" r="68%">
+      <stop offset="0%" stop-color="#91E3FF"/>
+      <stop offset="44%" stop-color="#0B8CF0"/>
+      <stop offset="100%" stop-color="#063E9D"/>
+    </linearGradient>
+    <radialGradient id="evilEye" cx="42%" cy="34%" r="76%">
+      <stop offset="0%" stop-color="#D7FBFF"/>
+      <stop offset="36%" stop-color="#1EAFFF"/>
+      <stop offset="78%" stop-color="#0753C7"/>
+      <stop offset="100%" stop-color="#041A60"/>
+    </radialGradient>
+    <filter id="evilGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#FF2C2C" flood-opacity="0.62"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#1E9CFF" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+<rect width="320" height="240" fill="none"/><g id="evil_wide_talk"><path d="M58 91 C126 57 206 57 272 91 C289 153 234 194 160 194 C86 194 42 155 58 91 Z" fill="#741A14"/><path d="M93 88 C140 112 182 112 227 88 C206 70 113 70 93 88 Z" fill="#F4EEE5"/><ellipse cx="160" cy="155" rx="38" ry="14" fill="#D85B64" opacity="0.8"/></g>
+</svg>

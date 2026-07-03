@@ -1,0 +1,247 @@
+{
+  "version": "7.0",
+  "description": "Corrected runtime model: Chucky Mode is the persistent GibberTalk transmission mode.",
+  "runtime_modes": {
+    "normal_mode": {
+      "visual_family": "normal",
+      "default_activity": "idle",
+      "activities": {
+        "idle": {
+          "expression_asset": "assets/normal/expressions/buddy_normal_idle.svg",
+          "meaning": "Buddy is available to the human user.",
+          "loops": [
+            "breathing",
+            "micro_gaze",
+            "natural_blink"
+          ]
+        },
+        "greeting": {
+          "expression_asset": "assets/normal/expressions/buddy_normal_happy.svg",
+          "meaning": "Buddy greets or re-engages the human user.",
+          "sequence": [
+            "head_lift",
+            "smile_increase",
+            "soft_blink"
+          ],
+          "next": "idle"
+        },
+        "listening": {
+          "expression_asset": "assets/normal/expressions/buddy_normal_listening.svg",
+          "meaning": "Human user is speaking or mic is active.",
+          "loops": [
+            "attentive_gaze",
+            "slow_blink",
+            "tiny_nod_optional"
+          ]
+        },
+        "thinking": {
+          "expression_asset": "assets/normal/expressions/buddy_normal_thinking.svg",
+          "meaning": "Buddy is processing a human-facing response.",
+          "loops": [
+            "thinking_gaze_drift"
+          ]
+        },
+        "speaking": {
+          "expression_asset": "assets/normal/expressions/buddy_normal_talking.svg",
+          "meaning": "Buddy is speaking to the human user.",
+          "loops": [
+            "normal_viseme_mouth",
+            "speech_head_bob",
+            "reduced_blink"
+          ]
+        },
+        "happy": {
+          "expression_asset": "assets/normal/expressions/buddy_normal_happy.svg",
+          "meaning": "Positive human-facing emotional beat.",
+          "sequence": [
+            "smile_pop",
+            "eye_brighten",
+            "small_nod"
+          ]
+        },
+        "concerned": {
+          "expression_asset": "assets/normal/expressions/buddy_normal_concerned.svg",
+          "meaning": "Mic blocked, error, or soft concern.",
+          "sequence": [
+            "head_dip",
+            "brows_in",
+            "soft_down_gaze"
+          ]
+        }
+      }
+    },
+    "chucky_mode": {
+      "visual_family": "chucky",
+      "meaning": "Persistent GibberTalk transmission mode.",
+      "default_activity": "transmission_idle",
+      "global_rule": "All activities in this mode are part of GibberTalk transmission.",
+      "activities": {
+        "entry_transform": {
+          "expression_asset": "assets/chucky/expressions/buddy_chucky_transmission.svg",
+          "meaning": "Buddy enters GibberTalk; friendly Buddy transforms into Chucky Mode.",
+          "sequence": [
+            "normal_freeze",
+            "eyes_snap",
+            "grin_grows",
+            "brows_harden",
+            "stitches_activate",
+            "glitch_pulse"
+          ],
+          "duration_ms": 900,
+          "next": "transmission_idle"
+        },
+        "transmission_idle": {
+          "expression_asset": "assets/chucky/expressions/buddy_chucky_evil_neutral.svg",
+          "meaning": "Buddy is in Chucky Mode and holding the GibberTalk channel open.",
+          "loops": [
+            "evil_stare",
+            "rare_blink",
+            "micro_twitch",
+            "low_glitch_pulse"
+          ]
+        },
+        "transmitting_send": {
+          "expression_asset": "assets/chucky/expressions/buddy_chucky_talking.svg",
+          "meaning": "Buddy is sending GibberTalk audio/data to another AI/Buddy.",
+          "loops": [
+            "coded_mouth_ticks",
+            "sharp_eye_darts",
+            "medium_glitch_pulse"
+          ]
+        },
+        "transmitting_receive": {
+          "expression_asset": "assets/chucky/expressions/buddy_chucky_evil_neutral.svg",
+          "meaning": "Buddy is receiving GibberTalk audio/data from another AI/Buddy.",
+          "loops": [
+            "eye_scan",
+            "rare_blink",
+            "listening_grin_hold",
+            "low_glitch_pulse"
+          ]
+        },
+        "coded_talking": {
+          "expression_asset": "assets/chucky/expressions/buddy_chucky_talking.svg",
+          "meaning": "Buddy is actively processing or vocalizing GibberTalk bursts.",
+          "loops": [
+            "coded_mouth_ticks",
+            "signal_glitch",
+            "head_twitch"
+          ]
+        },
+        "transmission_peak": {
+          "expression_asset": "assets/chucky/expressions/buddy_chucky_wicked_grin.svg",
+          "meaning": "High-intensity GibberTalk moment.",
+          "loops": [
+            "wicked_grin_hold",
+            "strong_eye_glow",
+            "heavy_glitch_pulse"
+          ]
+        },
+        "transmission_error": {
+          "expression_asset": "assets/chucky/expressions/buddy_chucky_snarl.svg",
+          "meaning": "GibberTalk error, interference, or failed AI-to-AI exchange.",
+          "sequence": [
+            "snarl_snap",
+            "pupil_sharpen",
+            "glitch_spike"
+          ]
+        },
+        "recovery": {
+          "expression_asset": "assets/chucky/expressions/buddy_chucky_recovery.svg",
+          "meaning": "Buddy exits GibberTalk transmission and returns to friendly Normal Mode.",
+          "sequence": [
+            "hold_grin",
+            "double_blink",
+            "glitch_fade",
+            "stitches_soften",
+            "brows_relax",
+            "friendly_return"
+          ],
+          "duration_ms": 1100,
+          "next_runtime_mode": "normal_mode",
+          "next_activity": "idle"
+        }
+      }
+    }
+  },
+  "app_event_map": {
+    "app_loaded": {
+      "runtime_mode": "normal_mode",
+      "activity": "greeting"
+    },
+    "waiting_for_user": {
+      "runtime_mode": "normal_mode",
+      "activity": "idle"
+    },
+    "mic_active": {
+      "runtime_mode": "normal_mode",
+      "activity": "listening"
+    },
+    "user_speaking": {
+      "runtime_mode": "normal_mode",
+      "activity": "listening"
+    },
+    "assistant_processing": {
+      "runtime_mode": "normal_mode",
+      "activity": "thinking"
+    },
+    "assistant_speaking": {
+      "runtime_mode": "normal_mode",
+      "activity": "speaking"
+    },
+    "assistant_done": {
+      "runtime_mode": "normal_mode",
+      "activity": "idle"
+    },
+    "mic_permission_denied": {
+      "runtime_mode": "normal_mode",
+      "activity": "concerned"
+    },
+    "gibbertalk_started": {
+      "runtime_mode": "chucky_mode",
+      "activity": "entry_transform"
+    },
+    "gibbertalk_channel_open": {
+      "runtime_mode": "chucky_mode",
+      "activity": "transmission_idle"
+    },
+    "gibbertalk_sending": {
+      "runtime_mode": "chucky_mode",
+      "activity": "transmitting_send"
+    },
+    "gibbertalk_receiving": {
+      "runtime_mode": "chucky_mode",
+      "activity": "transmitting_receive"
+    },
+    "gibbertalk_audio_burst": {
+      "runtime_mode": "chucky_mode",
+      "activity": "coded_talking"
+    },
+    "gibbertalk_peak": {
+      "runtime_mode": "chucky_mode",
+      "activity": "transmission_peak"
+    },
+    "gibbertalk_error": {
+      "runtime_mode": "chucky_mode",
+      "activity": "transmission_error"
+    },
+    "gibbertalk_ended": {
+      "runtime_mode": "chucky_mode",
+      "activity": "recovery"
+    },
+    "human_interrupt": {
+      "runtime_mode": "chucky_mode",
+      "activity": "recovery",
+      "then": {
+        "runtime_mode": "normal_mode",
+        "activity": "listening"
+      }
+    }
+  },
+  "priority_rules": [
+    "human_interrupt always exits chucky_mode",
+    "chucky_mode always means GibberTalk transmission is active",
+    "normal_mode is the only mode for human-facing conversation",
+    "transmission is not a separate top-level expression mode; it is the operating condition of chucky_mode"
+  ]
+}

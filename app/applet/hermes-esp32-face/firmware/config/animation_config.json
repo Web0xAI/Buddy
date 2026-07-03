@@ -1,0 +1,52 @@
+{
+  "states": {
+    "IDLE": {
+      "frame_timing_ms": 100,
+      "loop_count": -1,
+      "easing_function": "linear",
+      "blink_interval_ms": 4000
+    },
+    "LISTENING": {
+      "frame_timing_ms": 60,
+      "loop_count": -1,
+      "easing_function": "ease_in_out",
+      "bounce_amplitude": 10
+    },
+    "THINKING": {
+      "frame_timing_ms": 80,
+      "loop_count": -1,
+      "easing_function": "ease_in_out",
+      "dart_interval_ms": 2000
+    },
+    "SPEAKING": {
+      "frame_timing_ms": 50,
+      "loop_count": -1,
+      "easing_function": "ease_out",
+      "sync_with_audio": true
+    },
+    "WORKER_BUSY": {
+      "frame_timing_ms": 40,
+      "loop_count": -1,
+      "easing_function": "linear",
+      "focus_intensity": 0.8
+    },
+    "ERROR": {
+      "frame_timing_ms": 150,
+      "loop_count": 5,
+      "easing_function": "bounce",
+      "shake_amplitude": 20
+    },
+    "EMERGENCY_STOP": {
+      "frame_timing_ms": 50,
+      "loop_count": -1,
+      "easing_function": "step",
+      "flash_interval_ms": 500
+    },
+    "OFFLINE": {
+      "frame_timing_ms": 200,
+      "loop_count": 1,
+      "easing_function": "ease_in",
+      "fade_duration_ms": 1000
+    }
+  }
+}

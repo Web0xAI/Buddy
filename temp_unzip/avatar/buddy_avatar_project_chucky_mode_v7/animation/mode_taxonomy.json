@@ -1,0 +1,96 @@
+{
+  "version": "7.0",
+  "core_correction": "Chucky Mode is the persistent GibberTalk transmission mode, not a temporary expression called transmission.",
+  "top_level_modes": {
+    "normal_mode": {
+      "meaning": "Human-facing Buddy companion mode.",
+      "active_when": [
+        "user is talking to Buddy",
+        "Buddy is listening to human",
+        "Buddy is answering human",
+        "Buddy is idle with human available"
+      ],
+      "visual_family": "normal"
+    },
+    "chucky_mode": {
+      "meaning": "GibberTalk AI-to-AI transmission mode.",
+      "active_when": [
+        "Buddy enters GibberTalk",
+        "Buddy sends AI-to-AI audio",
+        "Buddy receives AI-to-AI audio",
+        "Buddy maintains an AI-to-AI backchannel"
+      ],
+      "visual_family": "chucky",
+      "important_rule": "Every Chucky Mode visual state is part of GibberTalk transmission."
+    }
+  },
+  "mode_layers": {
+    "runtime_mode": [
+      "normal_mode",
+      "chucky_mode"
+    ],
+    "activity_state": {
+      "normal_mode": [
+        "idle",
+        "greeting",
+        "listening",
+        "thinking",
+        "speaking",
+        "happy",
+        "concerned",
+        "empathetic",
+        "confused"
+      ],
+      "chucky_mode": [
+        "entry_transform",
+        "transmission_idle",
+        "transmitting_send",
+        "transmitting_receive",
+        "coded_talking",
+        "transmission_peak",
+        "recovery"
+      ]
+    },
+    "expression_asset": {
+      "normal_mode": [
+        "idle",
+        "happy",
+        "listening",
+        "thinking",
+        "talking",
+        "concerned"
+      ],
+      "chucky_mode": [
+        "evil_neutral",
+        "wicked_grin",
+        "talking",
+        "laughing",
+        "snarl",
+        "transmission",
+        "recovery"
+      ]
+    },
+    "animation_overlay": {
+      "normal_mode": [
+        "blink",
+        "gaze",
+        "head_tilt",
+        "viseme_mouth"
+      ],
+      "chucky_mode": [
+        "glitch",
+        "scar_visibility",
+        "eye_glow",
+        "coded_mouth_ticks",
+        "sharp_eye_darts"
+      ]
+    }
+  },
+  "renaming_guidance": {
+    "old_wrong_read": "chucky.transmission is only one expression/state.",
+    "new_correct_read": "chucky_mode itself is the transmission mode; chucky/transmission.svg is the most intense visual expression used during active transmission.",
+    "recommended_runtime_flag": "isGibberTalkTransmissionActive",
+    "recommended_visual_mode": "visualMode = 'chucky'",
+    "recommended_activity_state": "chuckyActivity = entry_transform | transmission_idle | transmitting_send | transmitting_receive | coded_talking | transmission_peak | recovery"
+  }
+}

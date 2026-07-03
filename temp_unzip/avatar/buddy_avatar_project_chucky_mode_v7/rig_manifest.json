@@ -1,0 +1,167 @@
+{
+  "project": "Buddy Avatar Project",
+  "version": "7.0",
+  "purpose": "Animation-ready rig layer asset system for Normal Mode and Chucky Mode.",
+  "modes": {
+    "normal": {
+      "display_name": "Normal Mode",
+      "rig_layers": {
+        "mouth_shapes": {
+          "rest_closed": "assets/normal/rig_layers/mouth_shapes/rest_closed.svg",
+          "small_smile": "assets/normal/rig_layers/mouth_shapes/small_smile.svg",
+          "wide_smile": "assets/normal/rig_layers/mouth_shapes/wide_smile.svg",
+          "open_smile": "assets/normal/rig_layers/mouth_shapes/open_smile.svg",
+          "a_open": "assets/normal/rig_layers/mouth_shapes/a_open.svg",
+          "e_wide": "assets/normal/rig_layers/mouth_shapes/e_wide.svg",
+          "o_round": "assets/normal/rig_layers/mouth_shapes/o_round.svg",
+          "u_small_round": "assets/normal/rig_layers/mouth_shapes/u_small_round.svg",
+          "mbp_closed_press": "assets/normal/rig_layers/mouth_shapes/mbp_closed_press.svg",
+          "fv_lower_lip": "assets/normal/rig_layers/mouth_shapes/fv_lower_lip.svg",
+          "concerned_curve": "assets/normal/rig_layers/mouth_shapes/concerned_curve.svg",
+          "thinking_flat": "assets/normal/rig_layers/mouth_shapes/thinking_flat.svg"
+        },
+        "eye_gaze": {
+          "center": "assets/normal/rig_layers/eye_gaze/center.svg",
+          "left": "assets/normal/rig_layers/eye_gaze/left.svg",
+          "right": "assets/normal/rig_layers/eye_gaze/right.svg",
+          "up": "assets/normal/rig_layers/eye_gaze/up.svg",
+          "down": "assets/normal/rig_layers/eye_gaze/down.svg",
+          "up_left": "assets/normal/rig_layers/eye_gaze/up_left.svg",
+          "up_right": "assets/normal/rig_layers/eye_gaze/up_right.svg",
+          "down_left": "assets/normal/rig_layers/eye_gaze/down_left.svg",
+          "down_right": "assets/normal/rig_layers/eye_gaze/down_right.svg"
+        },
+        "blink_frames": {
+          "blink_open": "assets/normal/rig_layers/blink_frames/blink_open.svg",
+          "blink_half": "assets/normal/rig_layers/blink_frames/blink_half.svg",
+          "blink_closed": "assets/normal/rig_layers/blink_frames/blink_closed.svg",
+          "blink_squint": "assets/normal/rig_layers/blink_frames/blink_squint.svg"
+        },
+        "head_tilts": {
+          "neutral": "assets/normal/rig_layers/head_tilts/neutral.svg",
+          "tilt_left": "assets/normal/rig_layers/head_tilts/tilt_left.svg",
+          "tilt_right": "assets/normal/rig_layers/head_tilts/tilt_right.svg",
+          "nod_down": "assets/normal/rig_layers/head_tilts/nod_down.svg",
+          "look_up": "assets/normal/rig_layers/head_tilts/look_up.svg"
+        }
+      },
+      "recommended_controls": [
+        "lookX",
+        "lookY",
+        "blink",
+        "eyeOpen",
+        "smile",
+        "mouthOpen",
+        "mouthShape",
+        "headTilt",
+        "headNod",
+        "speechIntensity"
+      ]
+    },
+    "chucky": {
+      "display_name": "Chucky Mode",
+      "trigger": "GibberTalk active",
+      "rig_layers": {
+        "mouth_shapes": {
+          "evil_rest_grin": "assets/chucky/rig_layers/mouth_shapes/evil_rest_grin.svg",
+          "evil_closed_smirk": "assets/chucky/rig_layers/mouth_shapes/evil_closed_smirk.svg",
+          "evil_teeth_grin": "assets/chucky/rig_layers/mouth_shapes/evil_teeth_grin.svg",
+          "evil_open_grin": "assets/chucky/rig_layers/mouth_shapes/evil_open_grin.svg",
+          "evil_side_smirk": "assets/chucky/rig_layers/mouth_shapes/evil_side_smirk.svg",
+          "evil_snarl": "assets/chucky/rig_layers/mouth_shapes/evil_snarl.svg",
+          "evil_laugh": "assets/chucky/rig_layers/mouth_shapes/evil_laugh.svg",
+          "evil_small_talk": "assets/chucky/rig_layers/mouth_shapes/evil_small_talk.svg",
+          "evil_wide_talk": "assets/chucky/rig_layers/mouth_shapes/evil_wide_talk.svg",
+          "evil_round_talk": "assets/chucky/rig_layers/mouth_shapes/evil_round_talk.svg",
+          "evil_hiss": "assets/chucky/rig_layers/mouth_shapes/evil_hiss.svg",
+          "evil_mbp": "assets/chucky/rig_layers/mouth_shapes/evil_mbp.svg",
+          "evil_fv": "assets/chucky/rig_layers/mouth_shapes/evil_fv.svg"
+        },
+        "eye_gaze": {
+          "center": "assets/chucky/rig_layers/eye_gaze/center.svg",
+          "left": "assets/chucky/rig_layers/eye_gaze/left.svg",
+          "right": "assets/chucky/rig_layers/eye_gaze/right.svg",
+          "up": "assets/chucky/rig_layers/eye_gaze/up.svg",
+          "down": "assets/chucky/rig_layers/eye_gaze/down.svg",
+          "up_left": "assets/chucky/rig_layers/eye_gaze/up_left.svg",
+          "up_right": "assets/chucky/rig_layers/eye_gaze/up_right.svg",
+          "down_left": "assets/chucky/rig_layers/eye_gaze/down_left.svg",
+          "down_right": "assets/chucky/rig_layers/eye_gaze/down_right.svg"
+        },
+        "blink_frames": {
+          "blink_open": "assets/chucky/rig_layers/blink_frames/blink_open.svg",
+          "blink_half": "assets/chucky/rig_layers/blink_frames/blink_half.svg",
+          "blink_closed": "assets/chucky/rig_layers/blink_frames/blink_closed.svg",
+          "blink_squint": "assets/chucky/rig_layers/blink_frames/blink_squint.svg"
+        },
+        "head_tilts": {
+          "neutral": "assets/chucky/rig_layers/head_tilts/neutral.svg",
+          "tilt_left": "assets/chucky/rig_layers/head_tilts/tilt_left.svg",
+          "tilt_right": "assets/chucky/rig_layers/head_tilts/tilt_right.svg",
+          "nod_down": "assets/chucky/rig_layers/head_tilts/nod_down.svg",
+          "look_up": "assets/chucky/rig_layers/head_tilts/look_up.svg"
+        },
+        "scar_overlays": {
+          "cheek_stitches": "assets/chucky/rig_layers/scar_overlays/cheek_stitches.svg",
+          "forehead_seam": "assets/chucky/rig_layers/scar_overlays/forehead_seam.svg",
+          "mouth_corner_stitches": "assets/chucky/rig_layers/scar_overlays/mouth_corner_stitches.svg"
+        },
+        "glitch_overlays": {
+          "small_glitch": "assets/chucky/rig_layers/glitch_overlays/small_glitch.svg",
+          "signal_bars": "assets/chucky/rig_layers/glitch_overlays/signal_bars.svg",
+          "heavy_glitch": "assets/chucky/rig_layers/glitch_overlays/heavy_glitch.svg"
+        }
+      },
+      "recommended_controls": [
+        "chuckyModeActive",
+        "evilSmile",
+        "eyeGlow",
+        "browAngle",
+        "glitchIntensity",
+        "codedMouthSpeed",
+        "lookX",
+        "lookY",
+        "blink",
+        "headForwardTilt"
+      ]
+    }
+  },
+  "contact_sheets": [
+    "references/contact_sheets/rig/normal_mouth_shapes_sheet.png",
+    "references/contact_sheets/rig/normal_eye_gaze_sheet.png",
+    "references/contact_sheets/rig/normal_blink_frames_sheet.png",
+    "references/contact_sheets/rig/normal_head_tilts_sheet.png",
+    "references/contact_sheets/rig/chucky_mouth_shapes_sheet.png",
+    "references/contact_sheets/rig/chucky_eye_gaze_sheet.png",
+    "references/contact_sheets/rig/chucky_blink_frames_sheet.png",
+    "references/contact_sheets/rig/chucky_head_tilts_sheet.png",
+    "references/contact_sheets/rig/chucky_scar_overlays_sheet.png",
+    "references/contact_sheets/rig/chucky_glitch_overlays_sheet.png"
+  ],
+  "implementation_note": "SVG assets are references and rig parts. For production, import into Rive or split into React/SVG groups and drive by the rig_manifest controls.",
+  "animation_logic": {
+    "state_machine": "animation/animation_state_machine.json",
+    "viseme_mapping": "animation/viseme_mapping.json",
+    "timing_presets": "animation/timing_presets.json",
+    "emotion_presets": "animation/presets/emotion_presets.json",
+    "behavior_rules": "animation/behavior_rules.json"
+  },
+  "v5_additions": {
+    "normal_buddy_svg_polish": "Improved Normal Mode master and expression SVGs.",
+    "notes": "docs/V5_NORMAL_BUDDY_POLISH.md",
+    "updated_normal_contact_sheet": "references/contact_sheets/normal_contact_sheet.png"
+  },
+  "v6_additions": {
+    "chucky_mode_svg_polish": "Improved Chucky Mode master and expression SVGs.",
+    "notes": "docs/V6_CHUCKY_MODE_POLISH.md",
+    "updated_chucky_contact_sheet": "references/contact_sheets/chucky_contact_sheet.png",
+    "updated_mode_comparison": "references/contact_sheets/mode_comparison_sheet.png"
+  },
+  "v7_mode_correction": {
+    "mode_taxonomy": "animation/mode_taxonomy.json",
+    "corrected_state_machine": "animation/animation_state_machine_v7.json",
+    "mode_taxonomy_doc": "docs/MODE_TAXONOMY_CORRECTION.md",
+    "state_map_v7": "docs/STATE_MAP_V7.md",
+    "rule": "Chucky Mode is the persistent GibberTalk transmission mode."
+  }
+}

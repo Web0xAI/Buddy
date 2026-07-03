@@ -1,0 +1,72 @@
+{
+  "version": "4.0",
+  "normal": {
+    "soft": {
+      "smile": 0.2,
+      "browConcern": 0.0,
+      "eyeOpen": 0.95,
+      "headTilt": 0.05
+    },
+    "happy": {
+      "smile": 0.8,
+      "browConcern": 0.0,
+      "eyeOpen": 1.0,
+      "headTilt": 0.04
+    },
+    "listening": {
+      "smile": 0.18,
+      "attention": 1.0,
+      "eyeOpen": 0.95,
+      "headTilt": 0.15
+    },
+    "thinking": {
+      "smile": 0.05,
+      "lookY": -0.35,
+      "lookX": 0.22,
+      "headTilt": 0.2
+    },
+    "empathetic": {
+      "smile": 0.1,
+      "browConcern": 0.25,
+      "eyeOpen": 0.82,
+      "headTilt": 0.12
+    },
+    "concerned": {
+      "smile": 0.0,
+      "browConcern": 0.55,
+      "lookY": 0.12,
+      "headNod": 0.15
+    }
+  },
+  "chucky": {
+    "evil_neutral": {
+      "evilSmile": 0.45,
+      "eyeGlow": 0.55,
+      "browAngle": 0.75,
+      "glitchIntensity": 0.1
+    },
+    "wicked": {
+      "evilSmile": 0.9,
+      "eyeGlow": 0.7,
+      "browAngle": 0.85,
+      "headForwardTilt": 0.4
+    },
+    "transmission": {
+      "glitchIntensity": 0.8,
+      "codedMouthSpeed": 0.9,
+      "eyeGlow": 0.9
+    },
+    "snarl": {
+      "evilSmile": 0.55,
+      "browAngle": 1.0,
+      "pupilSharpness": 1.0,
+      "eyeGlow": 0.85
+    },
+    "recovery": {
+      "evilSmile": 0.1,
+      "eyeGlow": 0.15,
+      "browAngle": 0.2,
+      "glitchIntensity": 0.0
+    }
+  }
+}

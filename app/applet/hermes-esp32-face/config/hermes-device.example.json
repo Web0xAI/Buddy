@@ -1,0 +1,19 @@
+{
+  "device_id": "hermes-esp32-001",
+  "board_type": "esp32s3",
+  "connection": {
+    "type": "serial",
+    "baud_rate": 115200,
+    "default_port": "COM3"
+  },
+  "features": {
+    "display": true,
+    "microphone": true,
+    "speaker": true,
+    "button": true
+  },
+  "behavior": {
+    "boot_state": "IDLE",
+    "auto_reconnect": true
+  }
+}

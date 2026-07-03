@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Buddy Chucky Mode improved transmission">
+  <defs>
+    <linearGradient id="skinEvil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD0A6"/><stop offset="48%" stop-color="#EFA06E"/><stop offset="100%" stop-color="#B7643E"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#68CCFF"/><stop offset="48%" stop-color="#139AF3"/><stop offset="100%" stop-color="#056DC5"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#965322"/><stop offset="100%" stop-color="#321404"/>
+    </linearGradient>
+    <linearGradient id="overallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF4248"/><stop offset="100%" stop-color="#A90F18"/>
+    </linearGradient>
+    <radialGradient id="eyeGradEvil" cx="42%" cy="34%" r="76%">
+      <stop offset="0%" stop-color="#D7FBFF"/><stop offset="34%" stop-color="#1EAFFF"/><stop offset="76%" stop-color="#0753C7"/><stop offset="100%" stop-color="#041A60"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#241008" flood-opacity="0.24"/>
+    </filter>
+    <filter id="evilGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#FF2C2C" flood-opacity="0.78"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#1E9CFF" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <g id="buddy-chucky-improved-transmission" filter="url(#shadow)">
+    <!-- stronger glitch aura -->
+    <g id="glitch-aura">
+      <rect x="177" y="278" width="54" height="8" rx="2" fill="#167CF2"/>
+      <rect x="151" y="351" width="66" height="9" rx="2" fill="#F1222F"/>
+      <rect x="790" y="272" width="60" height="8" rx="2" fill="#167CF2"/>
+      <rect x="820" y="346" width="50" height="8" rx="2" fill="#F1222F"/>
+      <rect x="188" y="704" width="52" height="8" rx="2" fill="#F1222F"/>
+      <rect x="792" y="710" width="60" height="8" rx="2" fill="#167CF2"/>
+      
+          <rect x="118" y="482" width="70" height="8" rx="2" fill="#167CF2"/>
+          <rect x="836" y="492" width="72" height="8" rx="2" fill="#F1222F"/>
+          <rect x="210" y="394" width="44" height="6" rx="2" fill="#167CF2"/>
+          <rect x="756" y="402" width="66" height="6" rx="2" fill="#F1222F"/>
+          <rect x="130" y="626" width="52" height="7" rx="2" fill="#F1222F"/>
+          <rect x="838" y="646" width="52" height="7" rx="2" fill="#167CF2"/>
+        
+    </g>
+
+    <!-- improved body same silhouette as v5, with darker Chucky contrast -->
+    <g id="body">
+      <path d="M232 872 C268 768 363 710 512 710 C661 710 756 768 792 872 L826 1024 H198 Z" fill="#DFAE25"/>
+      <path d="M242 842 H782 L790 879 H234 Z" fill="#FFD02A"/>
+      <path d="M232 879 H792 L801 918 H223 Z" fill="#146FD6"/>
+      <path d="M224 918 H800 L810 957 H214 Z" fill="#C8202A"/>
+      <path d="M214 957 H810 L820 995 H204 Z" fill="#3F9849"/>
+      <path d="M204 995 H820 L828 1024 H196 Z" fill="#604496"/>
+      <path d="M232 870 C197 897 178 951 167 1024 H286 L304 890 Z" fill="#146FD6"/>
+      <path d="M792 870 C827 897 846 951 857 1024 H738 L720 890 Z" fill="#146FD6"/>
+      <path d="M170 995 H289 L295 958 H177 Z" fill="#C8202A"/>
+      <path d="M735 958 H847 L854 995 H729 Z" fill="#C8202A"/>
+
+      <path d="M342 724 C366 720 396 720 424 727 L463 1024 H302 Z" fill="url(#overallGrad)"/>
+      <path d="M600 727 C628 720 658 720 682 724 L722 1024 H561 Z" fill="url(#overallGrad)"/>
+      <path d="M348 836 H676 C711 836 735 862 740 899 L756 1024 H268 L284 899 C289 862 313 836 348 836 Z" fill="url(#overallGrad)"/>
+      <path d="M402 884 H622 V979 C622 994 610 1006 595 1006 H429 C414 1006 402 994 402 979 Z" fill="#A90F18" opacity="0.98"/>
+      <path d="M427 914 H597" stroke="#68080E" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+
+      <circle cx="394" cy="805" r="31" fill="#FFD83D" stroke="#8A6200" stroke-width="5"/>
+      <circle cx="630" cy="805" r="31" fill="#FFD83D" stroke="#8A6200" stroke-width="5"/>
+      <g fill="#7E5300">
+        <circle cx="384" cy="795" r="4"/><circle cx="404" cy="795" r="4"/><circle cx="384" cy="815" r="4"/><circle cx="404" cy="815" r="4"/>
+        <circle cx="620" cy="795" r="4"/><circle cx="640" cy="795" r="4"/><circle cx="620" cy="815" r="4"/><circle cx="640" cy="815" r="4"/>
+      </g>
+      <path d="M430 716 C455 742 480 756 512 758 C488 782 455 784 423 760 Z" fill="#FFD83D" stroke="#8A6200" stroke-width="4"/>
+      <path d="M594 716 C569 742 544 756 512 758 C536 782 569 784 601 760 Z" fill="#FFD83D" stroke="#8A6200" stroke-width="4"/>
+    </g>
+
+    <rect x="443" y="684" width="138" height="98" rx="52" fill="url(#skinEvil)"/>
+    <ellipse cx="263" cy="528" rx="37" ry="52" fill="#C97C54"/>
+    <ellipse cx="761" cy="528" rx="37" ry="52" fill="#C97C54"/>
+
+    <g id="side-hair" fill="url(#hairGrad)">
+      <path d="M264 335 C231 427 238 610 318 694 C340 717 382 706 399 666 C362 610 343 540 347 446 C351 366 317 326 264 335 Z"/>
+      <path d="M760 335 C793 427 786 610 706 694 C684 717 642 706 625 666 C662 610 681 540 677 446 C673 366 707 326 760 335 Z"/>
+    </g>
+
+    <!-- slightly sharper face -->
+    <path id="face" d="M512 246
+      C661 246 762 353 762 523
+      C762 676 660 762 512 762
+      C364 762 262 676 262 523
+      C262 353 363 246 512 246 Z" fill="url(#skinEvil)"/>
+
+    <!-- darker face modeling -->
+    <ellipse cx="348" cy="590" rx="65" ry="36" fill="#6F1712" opacity="0.10"/>
+    <ellipse cx="676" cy="590" rx="65" ry="36" fill="#6F1712" opacity="0.10"/>
+    <path d="M327 515 C366 555 400 570 446 566" fill="none" stroke="#8E3C24" stroke-width="7" opacity="0.22" stroke-linecap="round"/>
+    <path d="M697 515 C658 555 624 570 578 566" fill="none" stroke="#8E3C24" stroke-width="7" opacity="0.22" stroke-linecap="round"/>
+
+    <!-- stronger scars and stitches -->
+    <g id="scars" fill="none" stroke="#572015" stroke-width="8" stroke-linecap="round" opacity="0.92">
+      <path d="M326 388 C359 420 391 449 432 470"/>
+      <path d="M592 351 C641 386 675 423 705 467"/>
+      <path d="M345 623 C383 598 419 592 456 601"/>
+      <path d="M585 652 C632 675 676 676 716 660"/>
+      <path d="M476 392 C505 365 538 365 570 392"/>
+    </g>
+    <g id="stitches" stroke="#210A05" stroke-width="4.5" stroke-linecap="round">
+      <path d="M345 400 L329 416"/><path d="M373 425 L357 443"/><path d="M403 449 L388 467"/>
+      <path d="M611 369 L596 388"/><path d="M642 397 L625 416"/><path d="M670 429 L653 448"/>
+      <path d="M369 612 L356 594"/><path d="M407 599 L401 580"/><path d="M626 663 L636 644"/><path d="M671 668 L678 648"/>
+      <path d="M493 380 L484 361"/><path d="M524 373 L524 353"/><path d="M553 381 L563 362"/>
+    </g>
+
+    <!-- cap -->
+    <g id="blue-cap">
+      <path d="M213 340 C233 139 362 55 512 55 C662 55 791 139 811 340 C736 277 638 248 512 248 C386 248 288 277 213 340 Z" fill="url(#capGrad)"/>
+      <path d="M512 66 C501 123 498 192 502 258" fill="none" stroke="#056CC5" stroke-width="8" stroke-linecap="round" opacity="0.42"/>
+      <path d="M360 91 C407 136 438 196 453 263" fill="none" stroke="#056CC5" stroke-width="6" stroke-linecap="round" opacity="0.31"/>
+      <path d="M664 91 C617 136 586 196 571 263" fill="none" stroke="#056CC5" stroke-width="6" stroke-linecap="round" opacity="0.31"/>
+      <path d="M215 333 C289 250 389 210 512 210 C635 210 735 250 809 333 C708 318 612 312 512 312 C412 312 316 318 215 333 Z" fill="#0988EA"/>
+      <path d="M244 333 C329 295 421 278 512 278 C603 278 695 295 780 333" fill="none" stroke="#035DA8" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+    </g>
+
+    <!-- wilder bangs -->
+    <path id="messy-bangs" d="M306 306
+      C360 270 438 256 512 258
+      C586 256 664 270 718 306
+      L716 389
+      C688 340 660 398 633 340
+      C606 395 574 337 546 382
+      C519 331 488 388 459 338
+      C434 395 401 338 374 389
+      C349 340 325 375 307 361 Z" fill="url(#hairGrad)"/>
+
+    <g stroke="#210A05" stroke-width="5" stroke-linecap="round" opacity="0.28">
+      <path d="M369 303 C362 340 365 366 374 396"/>
+      <path d="M438 282 C433 331 436 366 445 402"/>
+      <path d="M512 272 C509 324 509 363 512 404"/>
+      <path d="M586 282 C591 331 588 366 579 402"/>
+      <path d="M655 303 C662 340 659 366 650 396"/>
+    </g>
+
+    <!-- aggressive brows -->
+    <g id="brows" fill="none" stroke="#2A0F06" stroke-width="18" stroke-linecap="round">
+      <path d="M314 404 C368 423 420 459 475 514"/><path d="M710 404 C656 423 604 459 549 514"/>
+    </g>
+
+    <!-- sharper eyes -->
+    <g id="eyes" filter="url(#evilGlow)">
+      <path d="M333 498 C369 437 448 435 493 500 C454 536 383 535 333 498 Z" fill="#FFF"/>
+      <path d="M691 498 C655 437 576 435 531 500 C570 536 641 535 691 498 Z" fill="#FFF"/>
+      <circle cx="417" cy="492" r="41" fill="url(#eyeGradEvil)"/>
+      <circle cx="607" cy="492" r="41" fill="url(#eyeGradEvil)"/>
+      <circle cx="434" cy="492" r="18" fill="#041247"/>
+      <circle cx="590" cy="492" r="18" fill="#041247"/>
+      <circle cx="397" cy="463" r="10" fill="#FFF"/>
+      <circle cx="627" cy="463" r="10" fill="#FFF"/>
+      <path d="M335 498 C382 531 447 530 492 500" fill="none" stroke="#FF3737" stroke-width="7" stroke-linecap="round" opacity="0.86"/>
+      <path d="M689 498 C642 531 577 530 532 500" fill="none" stroke="#FF3737" stroke-width="7" stroke-linecap="round" opacity="0.86"/>
+    </g>
+
+    <!-- nose -->
+    <ellipse cx="512" cy="573" rx="41" ry="36" fill="#B65B38" opacity="0.62"/>
+    <ellipse cx="501" cy="559" rx="16" ry="10" fill="#FFD3B2" opacity="0.46"/>
+
+    <!-- freckles retained but darker -->
+    <g id="freckles" fill="#692818">
+      <circle cx="329" cy="556" r="5"/><circle cx="356" cy="538" r="5"/><circle cx="386" cy="557" r="5"/><circle cx="356" cy="574" r="4"/><circle cx="395" cy="534" r="4"/>
+      <circle cx="695" cy="556" r="5"/><circle cx="668" cy="538" r="5"/><circle cx="638" cy="557" r="5"/><circle cx="668" cy="574" r="4"/><circle cx="629" cy="534" r="4"/>
+    </g>
+
+    <g id="mouth">
+          <path d="M397 637 C464 692 562 694 642 612" fill="none" stroke="#3E1008" stroke-width="13" stroke-linecap="round"/>
+          <path d="M429 628 C486 657 558 651 619 611 C590 652 520 678 454 653 Z" fill="#E7DCCF"/>
+          <rect x="426" y="684" width="176" height="8" rx="2" fill="#167CF2"/>
+          <rect x="452" y="704" width="128" height="7" rx="2" fill="#F1222F"/>
+          <rect x="480" y="724" width="74" height="6" rx="2" fill="#167CF2"/>
+        </g>
+
+    <path d="M512 246 C661 246 762 353 762 523 C762 676 660 762 512 762 C364 762 262 676 262 523 C262 353 363 246 512 246 Z"
+      fill="none" stroke="#7C341F" stroke-width="4" opacity="0.30"/>
+  </g>
+</svg>

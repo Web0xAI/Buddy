@@ -1,0 +1,76 @@
+{
+  "version": "4.0",
+  "global": {
+    "expression_blend_ms": 250,
+    "mouth_transition_ms_normal": 120,
+    "mouth_transition_ms_chucky": 70,
+    "gaze_shift_ms": [
+      120,
+      250
+    ],
+    "head_tilt_ms": [
+      250,
+      450
+    ]
+  },
+  "normal": {
+    "blink_interval_ms": [
+      2500,
+      5000
+    ],
+    "blink_duration_ms": [
+      120,
+      180
+    ],
+    "slow_blink_duration_ms": [
+      250,
+      400
+    ],
+    "breathing_loop_ms": [
+      3000,
+      5000
+    ],
+    "micro_gaze_interval_ms": [
+      3000,
+      7000
+    ],
+    "talking_head_bob_px": [
+      1,
+      3
+    ],
+    "listening_nod_interval_ms": [
+      5000,
+      10000
+    ]
+  },
+  "chucky": {
+    "blink_interval_ms": [
+      4500,
+      9000
+    ],
+    "blink_duration_ms": [
+      90,
+      140
+    ],
+    "eye_dart_interval_ms": [
+      650,
+      1800
+    ],
+    "glitch_pulse_interval_ms": [
+      350,
+      1200
+    ],
+    "coded_mouth_tick_ms": [
+      55,
+      110
+    ],
+    "head_twitch_interval_ms": [
+      900,
+      2500
+    ],
+    "grin_hold_ms": [
+      600,
+      1800
+    ]
+  }
+}

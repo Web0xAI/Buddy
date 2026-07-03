@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "handoff_name": "Buddy + GibberTalk + Chucky Mode AI Studio Handoff",
+  "main_project": "source_projects/buddy_project_latest.zip",
+  "alternate_buddy_project": "source_projects/buddy_project_alt_upload.zip",
+  "protocol_project": "source_projects/gibbertalk_project.zip",
+  "avatar_project": "avatar_assets/buddy_avatar_project_chucky_mode_v7.zip",
+  "png_references": "reference_pngs/buddy_reference_pngs_v7.zip",
+  "core_terms": {
+    "Buddy App": "main human-facing companion app",
+    "GibberTalk": "hidden Buddy-to-Buddy / AI-to-AI acoustic communication layer",
+    "Chucky Mode": "visual transformation state during active GibberTalk transmission"
+  },
+  "runtime_modes": {
+    "normal_mode": "human-facing Buddy",
+    "chucky_mode": "GibberTalk transmission Buddy"
+  },
+  "activities": {
+    "normal_mode": [
+      "idle",
+      "greeting",
+      "listening",
+      "thinking",
+      "speaking",
+      "happy",
+      "concerned",
+      "empathetic",
+      "confused"
+    ],
+    "chucky_mode": [
+      "entry_transform",
+      "transmission_idle",
+      "transmitting_send",
+      "transmitting_receive",
+      "coded_talking",
+      "transmission_peak",
+      "transmission_error",
+      "recovery"
+    ]
+  },
+  "primary_instruction": "Do not prioritize UI cleanup first. Preserve the working Buddy app and integrate GibberTalk/Chucky Mode architecture."
+}
